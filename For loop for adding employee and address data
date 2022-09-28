@@ -1,0 +1,8 @@
+	Address address=null;
+		for (int i = 0; i <= 20; i++) {
+			address=new Address("Mumbai"+i+"","India",12+i*i);
+			this.addressRepository.save(address);
+			Employee e=new Employee(102+i,"Employee"+i+"","Employee"+i+"@gmail.com","959+"+i*i+i+"","khalil"+i+i+"",address);
+			this.employeeRepository.save(e);
+		}
+		
