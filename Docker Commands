@@ -1,0 +1,13 @@
+1. docker images = Show all the images
+2. docker ps     = Show the process running
+3. docker ps -a  = Show all the hidden process
+4. docker pull hello-world  = pull the hello-world repository from docker hub
+5. docker rmi <image-id>   = delete an image from the image id ( note:- image id can be partial)
+6. docker run hello-world = run the downloaded repository
+7. docker run --name=hw hello-world = Manually giving an id to image
+8. docker rm <container_name or id> = delete the image from the given id
+9. docker rename oldname newname = renaming the id 
+10. docker run nginx  = downloading nginx server
+11. docker run -p81:80 nginx =  running nginx on port 81 in foreground
+12. docker run -d -p81:80 nginx = running nginx on port 81 in background
+13. docker attach <container_id> = for getting the server running in background to foreground
